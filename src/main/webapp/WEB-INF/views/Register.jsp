@@ -8,17 +8,19 @@ pageEncoding="ISO-8859-1" isELIgnored="false" %>
 		<meta charset="ISO-8859-1">
 		<title>Register Product</title>
 		<style>
-			body {background-color:hsl(0, 100%, 90%);}
-			div  {text-align:center; color: blue;}
+			body {background-color:lightblue;}
+			div  {text-align:center;}
 			pre  {colour:blue; font-size:150%}
 			input{font-size:100%; align:right}
 		</style>
 	</head>
 	<body>
-		<div><br><br><h3>WELCOME TO E-COMMERCE PRODUCT REGISTRATION</h3><br>
+		<div><br><br><h1>WELCOME TO E-COMMERCE PRODUCT REGISTRATION</h1><br>
 		<form:form action="save" method="POST" modelAttribute="product">
 			<pre>
+			<!-- 
 ID   : <form:input path="id" readOnly="true"/><br>
+ -->
 CODE : <form:input path="code"/><br>
 NAME : <form:input path="name"/><br>
 COST : <form:input path="cost"/><br>
@@ -34,7 +36,7 @@ NOTE : <form:textarea path="note"/><br>
 <input type="submit" value="UPDATE"/>
 						</c:when>
 						<c:otherwise>
-<input type="submit" value="CREATE"/> &nbsp; &nbsp; <a href="all"><input type=button value="VIEW"></a> 
+<input type="submit" value="REGISTER"/> &nbsp; &nbsp; <a href="all"><input type=button value="VIEW"></a> 
 						</c:otherwise>
 					</c:choose>
 	${message}
