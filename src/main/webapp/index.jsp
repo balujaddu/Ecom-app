@@ -8,6 +8,5 @@
 </head>
 <body>
 	<jsp:forward page="welcome"/>
-
 </body>
 </html>
